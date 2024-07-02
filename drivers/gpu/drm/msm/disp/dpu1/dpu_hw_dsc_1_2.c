@@ -103,6 +103,10 @@ static void dpu_hw_dsc_config_1_2(struct dpu_hw_dsc *hw_dsc,
 
 	sblk = hw_dsc->caps->sblk;
 
+printk("-----dsc mode 0x%x\n", mode);
+printk("-----dsc w %d h %d\n", dsc->pic_width, dsc->pic_height);
+printk("-----dsc slice w %d h %d\n", dsc->slice_width, dsc->slice_height);
+printk("-----dsc offset init %d final %d\n", dsc->initial_offset, dsc->final_offset);
 	if (mode & DSC_MODE_SPLIT_PANEL)
 		data |= BIT(0);
 
