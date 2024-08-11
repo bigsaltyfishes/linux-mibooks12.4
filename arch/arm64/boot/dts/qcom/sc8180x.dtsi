@@ -3089,6 +3089,9 @@
 
 				status = "disabled";
 
+				#address-cells = <1>;
+				#size-cells = <0>;
+
 				ports {
 					#address-cells = <1>;
 					#size-cells = <0>;
@@ -3174,6 +3177,9 @@
 				phy-names = "dsi";
 
 				status = "disabled";
+
+				#address-cells = <1>;
+				#size-cells = <0>;
 
 				ports {
 					#address-cells = <1>;
