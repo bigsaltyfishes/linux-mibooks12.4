@@ -179,13 +179,13 @@
 			no-map;
 		};
 
-		gpu_mem: gpu-region@98715000 {
-			reg = <0x0 0x98715000 0x0 0x5000>;
+		cdsp_mem: cdsp-region@92400000 {
+			reg = <0x0 0x92400000 0x0 0x800000>;
 			no-map;
 		};
 
-		cdsp_mem: cdsp-region@98900000 {
-			reg = <0x0 0x98a00000 0x0 0x800000>;
+		gpu_mem: gpu-region@94000000 {
+			reg = <0x0 0x94000000 0x0 0x5000>;
 			no-map;
 		};
 	};
