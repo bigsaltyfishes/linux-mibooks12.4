@@ -1004,8 +1004,8 @@ static const struct adreno_info a6xx_gpus[] = {
 		.family = ADRENO_6XX_GEN2,
 		.revn = 680,
 		.fw = {
-			[ADRENO_FW_SQE] = "a630_sqe.fw",
-			[ADRENO_FW_GMU] = "a640_gmu.bin",
+			[ADRENO_FW_SQE] = "a680_sqe.fw",
+			[ADRENO_FW_GMU] = "a680_gmu.bin",
 		},
 		.gmem = SZ_2M,
 		.inactive_period = DRM_MSM_INACTIVE_PERIOD,
@@ -1052,6 +1052,8 @@ MODULE_FIRMWARE("qcom/a650_gmu.bin");
 MODULE_FIRMWARE("qcom/a650_sqe.fw");
 MODULE_FIRMWARE("qcom/a660_gmu.bin");
 MODULE_FIRMWARE("qcom/a660_sqe.fw");
+MODULE_FIRMWARE("qcom/a680_gmu.bin");
+MODULE_FIRMWARE("qcom/a680_sqe.fw");
 
 static const struct adreno_reglist a702_hwcg[] = {
 	{ REG_A6XX_RBBM_CLOCK_CNTL_SP0, 0x22222222 },
