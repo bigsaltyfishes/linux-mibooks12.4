@@ -59,8 +59,8 @@ static int hx83121a_panel_init_dsc_config(struct hx83121a_panel *ctx)
 		.dsc_version_major = 1,
 		.dsc_version_minor = 1,
 		.slice_height = 40,
-		.slice_width = 800,
-		.slice_count = 2,
+		.slice_width = 1600,
+		.slice_count = 1,
 		.bits_per_component = 8,
 		.bits_per_pixel = 8 << 4,
 		.block_pred_enable = true,
@@ -259,7 +259,7 @@ static int hx83121a_panel_probe(struct mipi_dsi_device *dsi)
 	/* This panel only supports DSC; unconditionally enable it */
 	hx83121a_panel_init_dsc_config(ctx);
 	dsi->dsc = &ctx->dsc;
-	dsi->dsc_slice_per_pkt = 2;
+	dsi->dsc_slice_per_pkt = 1;
 
 	ret = mipi_dsi_attach(dsi);
 	if (ret < 0) {

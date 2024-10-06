@@ -539,6 +539,15 @@
     status = "okay";
 };
 
+&mdss_dp0 {
+	status = "okay";
+};
+
+&mdss_dp0_out {
+	data-lanes = <0 1>;
+	remote-endpoint = <&usb_prim_qmpphy_dp_in>;
+};
+
 // Device don't support eDP
 &edp_phy {
 	status = "disabled";
@@ -688,6 +697,10 @@
 
 &usb_prim_dwc3_hs {
 	remote-endpoint = <&pmic_glink_con0_hs>;
+};
+
+&usb_prim_qmpphy_dp_in {
+	remote-endpoint = <&mdss_dp0_out>;
 };
 
 &usb_prim_qmpphy_out {
